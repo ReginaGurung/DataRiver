@@ -1,0 +1,17 @@
+{
+  "order_id": "600348673",
+  "rma": {
+    "id": "600004771",
+    "products": [
+      {
+        "sku": "CHATUBY57BLU-ME",
+        "quantity": 1,
+        "reason": 238,
+        "amount": 24895,
+        "action": "cancel"
+      }
+    ]
+  },
+  "amount": 24895,
+  "date": "2017-10-27T14:59:51Z"
+}

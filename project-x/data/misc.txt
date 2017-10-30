@@ -1,0 +1,11 @@
+./emit.sh http://localhost:2113 dummy dummy_event ../data/dummy.json 
+
+
+docker-compose build eventconsumer		# first build the docker. this runs the instructions/commands inside the Dockerfile
+docker-compose run --service-ports --rm eventconsumer ash
+
+
+$ cd project-x/
+$ touch docker-compose.yml
+$ docker pull adbrowne/eventstore  [starts the eventstore session ?]
+[from inside project-x] $ docker compose up

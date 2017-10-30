@@ -1,0 +1,13 @@
+version: "3"
+services:
+  eventstore:
+    container_name: project-x-eventstore
+    image: adbrowne/eventstore
+    ports:
+      - "2113:2113" 
+      - "1113:1113"
+  eventconsumer:
+    container_name: project-x-eventconsumer
+    image: eventconsumer
+    build:
+      context: event-consumer/
